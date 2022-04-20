@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"> 
+		<!-- BOC: [title] -->
+		<title>Hamochi Check Info</title>
+		<!-- EOC -->
+	  <!-- BOC: [meta] -->
+	  <!-- BOC: [scripts] -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
+	</head>
+	<body>
+		<div>
+			<div>navigator.platform: <span id="info-platform">--</span>  </div>
+			<div>navigator.userAgent: <span id="info-user-agent">--</span>  </div>
+			<div>navigator.maxTouchPoints: <span id="info-touch">--</span>  </div>
+			<div>innerWidth: <span id="info-inner-width">--</span>  </div>
+			<div>innerHeight: <span id="info-inner-height">--</span>  </div>
+			<div>clientWidth: <span id="info-client-width">--</span>  </div>
+			<div>clientWidth: <span id="info-client-height">--</span>  </div>
+		</div>
+
+		<script>
+			document.querySelector("#info-platform").innerHTML = navigator.platform;
+			document.querySelector("#info-user-agent").innerHTML = navigator.userAgent;
+			document.querySelector("#info-touch").innerHTML = navigator.maxTouchPoints;
+			document.querySelector("#info-inner-width").innerHTML = window.innerWidth;
+			document.querySelector("#info-inner-height").innerHTML = window.innerHeight;
+			document.querySelector("#info-client-width").innerHTML = window.document.documentElement.clientWidth;
+			document.querySelector("#info-client-height").innerHTML =  window.document.documentElement.clientHeight;
+		</script>
+	</body>
+</html>
